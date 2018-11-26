@@ -241,7 +241,6 @@ footer .small {
     transform: translate(100px, 100px);
     opacity: 1;
   }
-
   100% {
     transform: translate(250px, 0);
     opacity: 0.8;
@@ -252,11 +251,9 @@ footer .small {
   0% {
     box-shadow: 0 0 0 0 rgba(250, 69, 69, 0.4);
   }
-
   50% {
     box-shadow: 0 0 0 10px rgba(235, 74, 74, 0);
   }
-
   100% {
     box-shadow: 0 0 0 0 rgba(245, 86, 86, 0.5);
   }
@@ -367,7 +364,6 @@ footer .small {
   from {
     opacity: .4
   }
-
   to {
     opacity: 1
   }
@@ -377,7 +373,6 @@ footer .small {
   from {
     opacity: .4
   }
-
   to {
     opacity: 1
   }
@@ -408,7 +403,7 @@ footer .small {
   padding: 8px;
   text-decoration: none;
   font-size: 24px;
-  color: #fff;
+  color: rgb(255, 155, 155);
   text-transform: uppercase;
   display: block;
   letter-spacing: 4px;
@@ -418,15 +413,24 @@ footer .small {
 .overlay a:hover,
 .overlay a:focus {
   color: #f1f1f1;
+  background-color: orange;
 }
 
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 5px;
+  right: 10px;
   font-size: 60px;
 }
 
+@media screen and (max-width: 1440px) {
+  .title {
+    font-size: 54px;
+  }
+  .pulse {
+    margin-top: -100px;
+  }
+}
 
 @media screen and (max-width: 1091px) {
   .banner {
@@ -435,57 +439,43 @@ footer .small {
   .prev {
     left: 15px;
   }
-
   .next {
     right: 15px;
   }
-
-
   .pulse {
-    margin-top: -100px;
+    margin-top: -20px;
   }
-
   .banner-content {
     flex-direction: column-reverse;
     align-content: space-around;
     padding: 50px 0;
   }
-
   .banner-content img {
     animation: none;
   }
-
   .inline {
     flex-direction: column;
-    padding: 20px;
   }
-
   .title {
     font-size: 52px;
-    padding-left: 30px;
   }
-
   .comment {
     font-size: 18px;
   }
-
   .quotes img {
     width: 40px;
     height: 40px;
     left: 30px;
   }
-
   .page-title {
     font-size: 30px;
     text-align: center;
   }
-
   .icon,
   .connect .content,
   footer .content {
-    width: 100%;
+    width: 80%;
   }
-
   footer .small {
     color: #999;
     font-size: 12px;
@@ -496,15 +486,13 @@ footer .small {
   .banner-content {
     padding: 150px 10px;
   }
-
   .title {
     font-size: 42px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
-
   .tag {
     font-size: 10px;
     letter-spacing: 2px;
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
