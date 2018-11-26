@@ -412,8 +412,7 @@ footer .small {
 
 .overlay a:hover,
 .overlay a:focus {
-  color: #f1f1f1;
-  background-color: orange;
+  color: #fce0e0;
 }
 
 .overlay .closebtn {
