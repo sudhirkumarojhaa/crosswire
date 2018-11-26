@@ -13,9 +13,19 @@
 <body>
   <!-- Banner -->
   <div class="top">
-    <h1 class="logo">cXoss <span class="color">wire</span></h1>
-    <img src="./img/menu.png" alt="" class="menu">
+    <h1 class="logo">X-wire</span></h1>
+    <img src="./img/menu.png" alt="" class="menu" onclick="openNav()">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
   </div>
+
   <section class="banner" id="section1">
     <div class="banner-content">
       <div class="text">
@@ -194,7 +204,7 @@
       <div class="list">
         <ul>
           <li class="big">Contact us</li>
-          <li class="small">crosswire LLC</li>
+          <li class="small">Crosswire LLC</li>
           <li class="small">333 network street, Park Avenue</li>
           <li class="small">898-980-3789</li>
           <li class="small">helloworld@gmail.com</li>
