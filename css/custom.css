@@ -113,12 +113,13 @@ a:focus {
   margin: 0 auto;
   margin-top: -10px;
   display: block;
-  padding: 10px 60px;
+  padding: 10px 30px;
   font-family: sans-serif;
+  font-weight: bold;
   cursor: pointer;
   background: wheat;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   font-size: 14px;
   outline: none;
   border: 0;
@@ -153,15 +154,61 @@ a:focus {
   padding: 40px 0;
 }
 
+/* card css */
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 15px #e3e3e3;
+  padding: 50px;
+  margin: 15px;
+}
+
+.profile-pic {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 20px #000;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+}
+
+.caption {
+  margin-top: 30px;
+}
+
+.caption h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.caption p {
+  font-size: 12px;
+  text-align: center;
+}
+
 .scrolltop {
   position: fixed;
-  bottom: 50px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
+  bottom: 20px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background-color: yellow;
-  border: 5px solid orange;
+  background-color: #efefca;
+  border: 5px solid rgb(0, 0, 0);
   animation: pulse 2s infinite;
   display: none;
 }
@@ -429,9 +476,20 @@ footer .small {
   .pulse {
     margin-top: -100px;
   }
+  .team {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 1091px) {
+  .container {
+    width: 100%;
+  }
+  .icon,
+  .connect .content {
+    padding: 10px 40px;
+    width: 95%;
+  }
   .banner {
     height: 900px;
   }
@@ -459,7 +517,8 @@ footer .small {
     font-size: 52px;
   }
   .comment {
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 2px;
   }
   .quotes img {
     width: 40px;
@@ -467,17 +526,21 @@ footer .small {
     left: 30px;
   }
   .page-title {
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
   }
-  .icon,
-  .connect .content,
+  .small {
+    font-size: 14px;
+  }
   footer .content {
-    width: 80%;
+    width: 100%;
   }
   footer .small {
     color: #999;
     font-size: 12px;
+  }
+  .scrolltop {
+    right: 15px;
   }
 }
 
@@ -493,5 +556,8 @@ footer .small {
     font-size: 10px;
     letter-spacing: 2px;
     padding-left: 20px;
+  }
+  .card {
+    width: 80%;
   }
 }
